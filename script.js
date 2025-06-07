@@ -134,7 +134,7 @@ function startWeb() {
   });
   setTimeout(() => {
     showcompanyText('adell', 0);
-  }, 1000);
+  }, 500);
 }
 
 
