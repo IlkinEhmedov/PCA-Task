@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #FFFFFF;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+
+.main-container {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+header p {
+  position: relative;
+  z-index: 999;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 999;
+}
+
+.title .highlight {
+  color: #3498db;
+}
+
+.companyText-card {
+  background: #06A4ED;
+  border-radius: 20px;
+  width: 70%;
+  padding: 2rem;
+  color: white;
+  box-shadow: 0 20px 40px rgba(52, 152, 219, 0.3);
+  transition: all 0.6s;
+  animation: slideIn 0.8s ease-out;
+  position: relative;
+  cursor: default;
+  z-index: 999;
+  overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.95);
+  }
+}
+
+.slide-out {
+  animation: slideOut 0.5s ease-in;
+}
+
+.companyText-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.author-info h5 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.author-info p {
+  font-size: 1rem;
+  opacity: 0.9;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.center-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #06A4ED;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  box-shadow: 0 10px 30px rgba(52, 152, 219, 0.4);
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 8;
+
+
+}
+
+.quot {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.circle-line {
+  position: absolute;
+  border: 3px solid #3498db;
+  width: 330px;
+  height: 330px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -3;
+  border-radius: 100%;
+}
+
+.first-circle {
+  border: 3px solid #3498db;
+  width: 330px;
+  height: 330px;
+}
+
+.second-circle {
+  border: 3px solid #59b5f2;
+  width: 530px;
+  height: 530px;
+}
+
+.thirth-circle {
+  border: 3px solid #85cdfe;
+  width: 730px;
+  height: 730px;
+}
+
+.fourth-circle {
+  border: 3px solid #abd9f8;
+  width: 930px;
+  height: 930px;
+}
+
+.fifth-circle {
+  border: 3px solid #bee9fa;
+  width: 1130px;
+  height: 1130px;
+}
+
+.sixth-circle {
+  border: 3px solid #d1f2ff;
+  width: 1330px;
+  height: 1330px;
+}
+
+.seventh-circle {
+  border: 3px solid #daf4ff;
+  width: 1530px;
+  height: 1530px;
+  border-width: 2.5px;
+}
+
+.eighth-circle {
+  border: 3px solid #dbf5ff;
+  width: 1730px;
+  height: 1730px;
+  border-width: 2px;
+}
+
+.company-logo {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: white;
+  border-radius: 50%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 3px solid transparent;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 769px) {
+
+  .company-logo:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    border: 1.5px solid #3498db;
+  }
+
+}
+
+
+
+.company-logo img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+  transform: scale(2) translateY(5%);
+}
+
+
+.audi-1 {
+  top: -125px;
+  left: 0px;
+}
+
+.adell-1 {
+  top: -90px;
+  right: -70px;
+}
+
+.adell-2 {
+  top: -200px;
+  left: -85px;
+}
+
+.adell-3 {
+  bottom: 40px;
+  left: -230px;
+}
+
+
+.istanbul-1 {
+  bottom: -120px;
+  right: 0px;
+}
+
+.istanbul-2 {
+  bottom: -200px;
+  left: -90px;
+}
+
+.istanbul-3 {
+  bottom: -180px;
+  right: -120px;
+}
+
+.istanbul-4 {
+  top: -100px;
+  left: -300px;
+}
+
+.audi-2 {
+  bottom: -80px;
+  left: -80px;
+}
+
+.audi-3 {
+  top: -20px;
+  left: -120px;
+}
+
+.seniorita {
+  bottom: -20px;
+  right: -120px;
+}
+
+@media screen and (max-width: 993px) {
+  .company-logo:hover {
+    transform: none !important;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .main-container {
+    min-height: 100vh;
+    height: auto;
+    overflow: visible;
+  }
+
+  .title {
+    font-size: 1.5rem !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  .companyText-card {
+    width: 90%;
+  }
+
+  .companyText-text {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .author-info h5 {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .center-text {
+    width: 100px;
+    height: 100px;
+    font-size: 0.85rem;
+  }
+
+  .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .first-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  .second-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .thirth-circle {
+    width: 400px;
+    height: 400px;
+  }
+
+  .fourth-circle {
+    width: 500px;
+    height: 500px;
+  }
+
+  .fifth-circle {
+    width: 600px;
+    height: 600px;
+  }
+
+  .sixth-circle {
+    width: 700px;
+    height: 700px;
+  }
+
+  .seventh-circle {
+    width: 800px;
+    height: 800px;
+  }
+
+  .eighth-circle {
+    width: 900px;
+    height: 900px;
+  }
+
+  .audi-1 {
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .adell-1 {
+    top: 50%;
+    right: -70px;
+    transform: translateY(-50%);
+  }
+
+  .istanbul-1 {
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .audi-2 {
+    top: 50%;
+    left: -70px;
+    transform: translateY(-50%);
+  }
+
+  .adell-2 {
+    top: -120px;
+    left: 25%;
+    transform: translateX(-50%);
+  }
+
+  .seniorita {
+    top: -90px;
+    right: -70px;
+  }
+
+  .istanbul-2 {
+    bottom: -120px;
+    left: 25%;
+    transform: translateX(-50%);
+  }
+
+  .istanbul-3 {
+    bottom: -110px;
+    right: -50px;
+  }
+
+  .audi-3 {
+    top: 25%;
+    left: -110px;
+    transform: translateY(-50%);
+  }
+
+  .adell-3 {
+    /* top: 25%; */
+    right: -90px !important;
+    /* transform: translateY(-50%); */
+  }
+
+  .istanbul-4 {
+    bottom: 25%;
+    left: -150px;
+    transform: translateY(50%);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .company-logo:hover {
+    transform: scale(1) !important;
+  }
+
+  .companyText-card {
+    font-size: 0.1rem !important;
+  }
+
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .center-text {
+    width: 90px;
+    height: 90px;
+    font-size: 0.45rem;
+  }
+
+  .first-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .second-circle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .thirth-circle {
+    width: 320px;
+    height: 320px;
+  }
+
+  .fourth-circle {
+    width: 420px;
+    height: 420px;
+  }
+
+
+  .fifth-circle {
+    width: 520px;
+    height: 520px;
+  }
+
+  .sixth-circle {
+    width: 620px;
+    height: 620px;
+  }
+
+  .seventh-circle {
+    width: 720px;
+    height: 720px;
+  }
+
+  .eighth-circle {
+    width: 820px;
+    height: 820px;
+  }
+
+  .audi-1 {
+    top: -50px;
+  }
+
+  .adell-1 {
+    right: -50px;
+  }
+
+  .istanbul-1 {
+    bottom: -50px;
+  }
+
+  .audi-2 {
+    left: -50px;
+  }
+
+  .adell-2 {
+    top: -90px;
+  }
+
+  .seniorita {
+    top: -70px;
+  }
+
+  .istanbul-2 {
+    bottom: -90px;
+  }
+
+  .istanbul-3 {
+    bottom: -70px;
+  }
+
+  .audi-3,
+  .adell-3,
+  .istanbul-4 {
+    left: -90px;
+  }
+
+  .adell-3 {
+    right: -90px;
+    left: auto;
+  }
+
+  .seniorita {
+    right: -50px;
+  }
+}
